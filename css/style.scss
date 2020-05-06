@@ -1,199 +1,242 @@
 //general styling
+body,
+html,
 * {
     margin: 0;
     padding: 0;
-}
- body{
-    width: 100%;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
     font-family: 'IBM Plex Sans', sans-serif;
- }
-// ------------------------------Sections Containers------------------------------------------
-// .home{
-//     position: relative;
-//     width: 100%;
-//     height: 400px;
-// }
-.home, .about, .gallery, .contact{
-    position: relative;
-    width: 100%;
-    height: 800px;
+}
+
+main {
+    background-image: url(../images/Dimond_Pattern.png);
+    background-repeat: repeat;
+    background-size: contain;
+
 }
 
 // ----------------------navbar-------------------
-
-//.navbar {
-//position: fixed;
-//  top: 0;
-//  width: 100%;
-//  line-height: 60px;   
- //}
-
-// .navbar ul {
-//     //position: relative; //this does not work
-//     //top: 200px; 
-//     width: 100%;
-//     padding: 0;
-//     text-align: center;
-//     font-size: 0;
-// }
-
-// .navbar li{
-//     list-style: none;
-//     padding: 0px;
-//     height:40px;
-//     width: 120px;
-//     line-height: 40px;
-//     border: none;
-//     font-size: 20px;
-//     display:inline-block;
-// }
-
-// .navbar a{
-//     display: block;
-//     color: rgb(0, 126, 210);
-//     text-decoration: none;
-// }
-
-// .navbar li:hover {
-//     background-color: #3693ff;
-// }
-
-.myname{
-    font-size: 5em;
-    position: absolute;
-    top: 300px;
-    width: 100%;
-   text-align: center;
-    
-}
-
-
-
-h1{
-    position: absolute;
-    top: 50px;
-    width: 100%;
-   text-align: center;
-
-}
-
-.one {
-    position: relative;
-    height: 100vh;
-    z-index: 1;
+#navbar ul {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    list-style-type: none;
+}
 
-        img{
+#navbar ul li a {
+    text-decoration: none;
+    padding: 0 1em;
+    color: #fff;
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 126, 210);
+}
+
+#navbar {
+    padding: 1.5em 0;
+    background: #000; //we can remove this later
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+// ------------------------------Sections Containers------------------------------------------
+.home,
+.about,
+.gallery,
+.contact {
+    //position: relative;
+    width: 100%;
+    //height: 800px;
+
+    h1 {
+        //position: relative;
+        //top: 100px;
+        //margin-top: 100px;
+        //width: 80%;
+        //padding: 2em;
+        color: #02B0F0;
+        text-align: center;
+    }
+   
+}
+
+// ------------------------------Home Containers------------------------------------------
+
+img#desg {
+    display: block;
+    position: relative;
+    width: 55%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.box1 {
+    text-align: center;
+}
+
+.myname {
+    font-size: 10vw;
+
+}
+
+// ------------------------------About Containers------------------------------------------
+.wrapper {
+    display: flex;
+
+    img#bao {
         width: 50%;
-        //box-shadow: rgba(0, 0, 0, 0.5) 14px 14px 14px;
-        line-height: 1.5em;
-        padding: 4em;
-        background: none;
-        position: absolute;
-        bottom: 300px;
-   }
-   .bg {
-    position: absolute;
-    width: 100%;
-    height: 160%; 
-    background-image:url('../images/Dimond_Pattern.png');
-    background-repeat: repeat-x repeat-y;
-    background-size: cover; //not sure about this...
-    content:" ";
+        height: auto;
+        padding: 1.5em;
+    }
+
+    // h2{
+    //     //width: 50%;
+    //     //padding: 1em;
+    //     //text-align: right;
+    // }
+
+    p {
+         width: 50%;
+        // margin: 0;
+        padding: 1.5em;
+        // display: flex;
+        // text-align: right;
+    }
 }
+
+img#butter {
+    width: 10%;
+    transform: rotate(-20deg);
 }
-//-----------------About Me----------------------
+
+
 .two {
-    position: relative;
-    height: 100vh;
-    z-index: 1;
+    margin: 0;
+    padding: 20px;
+
+}
+
+// ------------------------------Gallery Containers------------------------------------------
+
+
+
+img#butter2{
+        width: 10%;
+    transform: rotate(20deg);
+    }
+.wrapperGallery{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
-        img{
-    width: 25%;
-    position: absolute;
-    right: 160px;
-   }
-   p{
-       width: 40%;
-       padding: 20px;
-       position: absolute;
-       left: 240px;
-       text-align: right;
-   }
-   .bg {
-    position: absolute;
-    top: -45px;
-    left: 10px;
-    width: 100%;
-    height: 160%; 
-    background-image:url('../images/Dimond_Pattern.png');
-    background-repeat: repeat-x repeat-y;
-    background-size:cover;
-    content:" ";
-    z-index: -1;
-}
-.btnResume{
-    background-color: rgb(0, 103, 213);
-    color: white;
-    position: absolute;
-    top: 500px;
-    width: 130px;
-    height:30px;
-}
-h2{
-    color: orange;
-    position: absolute;
-    left: 270px;
-    bottom: 450px;
-    text-align: right;
-}
+
+
+    .burgerCover{
+        width: 25%;
+        height: auto;
+        padding: 1.5em;
+    }
+
+    p{
+        width: 50%;
+        // margin: 0;
+        padding: 1.5em;
+        // display: flex;
+        // text-align: right;  
+    }
+
+    .btnResume{
+        display: inline;
+    }
 }
 
 
-// @media screen and (max-width: 600px) {
-//     .navbar a:not(:first-child) {display: none;}
-//     .navbar a.icon {
-//       float: right;
-//       display: block;
-//     }
-//   }
-  
-//   @media screen and (max-width: 600px) {
-//     .navbar.responsive {position: relative;}
-//     .navbar.responsive .icon {
-//       position: absolute;
-//       right: 0;
-//       top: 0;
-//     }
-//     .navbar.responsive a {
-//       float: none;
-//       display: block;
-//       text-align: left;
-//     }
-//   }
 
 
+//-------------------------Media Query------------------------//
 
 
+@media screen and (max-width: 600px) {
+    .wrapper {
+        //display: flex;
+        //width: 80%;
+        display: flex;
+        flex-direction: column-reverse;
 
+        img#bao {
+            width: 80%;
+            height: auto;
+            padding: 2em;
+        }
+        
+        // h2{
+        //     width: 100%;
+        //     //padding: 1em;
+        //     text-align: right;
+        // }
 
-// @media screen and (min-width: 375px) {
-//     header {
+        p {
+            width:100%;
+            //font-size: 1em;
+            padding: 1em;
+            //text-align: left;
+           
+        }
+    }
+}
+
+// @media screen and (max-width: 900px) {
+//     .wrapper {
+//         //display: flex;
+//         //width: 80%;
 //         display: flex;
-//         justify-content: space-between;
+//         flex-direction: column-reverse;
+
+//         img#bao {
+//             width: 80%;
+//             height: auto;
+//             padding: 2em;
+//         }
+        
+//         // h2{
+//         //     width: 100%;
+//         //     //padding: 1em;
+//         //     text-align: right;
+//         // }
+
+//         p {
+//             width:100%;
+//             //font-size: 1em;
+//             padding: 1em;
+//             //text-align: left;
+           
+//         }
 //     }
-//     nav ul {
-//         margin-top: .2em;
-//     }
-//     nav ul li:nth-of-type(3) {
-//         margin-right: 0;
+// }
+
+
+// @media screen and (max-width: 1200px) {
+//     .wrapper {
+//         //display: flex;
+//         width: 80%;
+//         display: flex;
+//         flex-direction: column-reverse;
+
+//         img#bao {
+//             width: 80%;
+//             height: auto;
+//             padding: 1.5em;
+//         }
+        
+//         h2{
+//             width: 100%;
+//             //padding: 1em;
+//             text-align: right;
+//         }
+
+//         p {
+//             width:100%;
+//             //font-size: 1em;
+//             padding: 1em;
+//             //text-align: left;
+           
+//         }
 //     }
 // }

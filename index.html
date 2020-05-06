@@ -13,61 +13,99 @@
 
 
 <body>
+    <main>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-    <nav class="navbar" id="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        </nav>
 
-    </nav>
-
-    <!-- background and logo -->
-    <div class="home" id="home">
-        <div class="one">
-            <div class="myname">Bao By Xiong<br>Portfolio
+        <!-- background and logo -->
+        <div class="home" id="home">
+            <img id="desg" src="images/design.png" alt="">
+            <div class="box1">
+                <hl class="myname">Bao By Xiong<br>Portfolio
+                    </h1>
             </div>
-            <img src="images/design.png" alt="">
-            <div class="bg"></div>
         </div>
 
-    </div>
+        <!-------------------------------- About -------------------------->
+        <div class="about" id="about">
 
-    <!-- About -->
-    <div class="about" id="about">
-        <div class="two">
-            <h1>About Me</h1>
-            <h2>Student of Century College<br>
-                Major Web Design Associate Applied Science</h2>
-            <img src="images/Bao.png" alt="">
-            <img src="images/butterfly-01.png" alt="">
-            <p>I am a college student who is working towards becoming a Web Design artist. I have been interested in art
-                and design since a young age. I am a problem-solver and I enjoy creating designs that convey a message
-                and compel audience interest. I am able to set priorities and am flexible in juggling tasks as needed to
-                accomplish goals. I am extremely passionate about my work and I like to complete a job thoroughly and
-                will work tirelessly to exceed expectations and meet deadlines. I have learning experiment in Web Design
-                and Graphic Design software.</p>
-            <div class="bg"></div>
-            <button class="btnResume" type="button" onclick="alert('Hello world!')">Click Me!</button>
+            <div class="two">
+
+                <h1>About Me</h1>
+
+                
+
+                <section class="wrapper">
+                    <ul>
+                        <li>
+                            <img id="bao" src="images/Bao.png" alt="">
+                            <img id="butter" src="images/butterfly-01.png" alt="">
+                            <h2>Student of Century College<br>
+                                Major Web Design Associate Applied Science</h2>
+                            <p>I am a college student who is working towards becoming a Web Design artist. I have been
+                                interested in
+                                art
+                                and design since a young age. I am a problem-solver and I enjoy creating designs that
+                                convey a
+                                message
+                                and compel audience interest. I am able to set priorities and am flexible in juggling
+                                tasks as
+                                needed to
+                                accomplish goals. I am extremely passionate about my work and I like to complete a job
+                                thoroughly
+                                and
+                                will work tirelessly to exceed expectations and meet deadlines. I have learning
+                                experiment in
+                                Web
+                                Design
+                                and Graphic Design software.</p>
+
+                                <form action="https://google.com">
+                                    <button type="submit" value="Go to Google">
+                                </form>
+                        </li>
+                    </ul>
+
+                </section>
+                
+            </div>
         </div>
-    </div>
+        <!-------------------------------- Gallery --------------------------->
+        <div class="gallery" id="gallery">
+            <div class="one">
+                <h1>Gallery</h1>
+                <h3>Mobile Website </h3>
+                <img id="butter2" src="images/butterfly-01.png" alt="">
+                <section class="wrapperGallery">
 
-    <div class="gallery" id="gallery">
-        <div class="one">
-            <h1>Gallery</h1>
+
+                    <p><a href="https://xd.adobe.com/view/03de53ed-4375-4140-74b8-44bc958411c8-75ef/">This is my mobile
+                            demo of a burger restaurant. Is not fully finished yet. It will be finish soon
+                        </a></p>
+                    <img class="burgerCover" src="images/burgerflame.png" alt="">
+
+
+                </section>
+            </div>
         </div>
-    </div>
 
-    <div class="contact" id="contact">
-        <div class="one">
-            <h1>Contact Me</h1>
+        <div class="contact" id="contact">
+            <div class="one">
+                <h1>Contact Me</h1>
+            </div>
         </div>
-    </div>
 
-    <script src="js/script.js"></script>
-    <script></script>
+        <script src="js/script.js"></script>
+        <script></script>
+
+    </main>
 </body>
 
 </html>

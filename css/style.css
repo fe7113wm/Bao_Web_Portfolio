@@ -1,127 +1,149 @@
+body,
+html,
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
-  width: 100%;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.home, .about, .gallery, .contact {
-  position: relative;
+main {
+  background-image: url(../images/Dimond_Pattern.png);
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+#navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  list-style-type: none;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  padding: 0 1em;
+  color: #fff;
+}
+
+#navbar ul li a:hover {
+  color: #007ed2;
+}
+
+#navbar {
+  padding: 1.5em 0;
+  background: #000;
+  position: fixed;
   width: 100%;
-  height: 800px;
+  z-index: 100;
+}
+
+.home,
+.about,
+.gallery,
+.contact {
+  width: 100%;
+}
+
+.home h1,
+.about h1,
+.gallery h1,
+.contact h1 {
+  color: #02B0F0;
+  text-align: center;
+}
+
+img#desg {
+  display: block;
+  position: relative;
+  width: 55%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.box1 {
+  text-align: center;
 }
 
 .myname {
-  font-size: 5em;
-  position: absolute;
-  top: 300px;
-  width: 100%;
-  text-align: center;
+  font-size: 10vw;
 }
 
-h1 {
-  position: absolute;
-  top: 50px;
-  width: 100%;
-  text-align: center;
-}
-
-.one {
-  position: relative;
-  height: 100vh;
-  z-index: 1;
+.wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.one img {
+.wrapper img#bao {
   width: 50%;
-  line-height: 1.5em;
-  padding: 4em;
-  background: none;
-  position: absolute;
-  bottom: 300px;
+  height: auto;
+  padding: 1.5em;
 }
 
-.one .bg {
-  position: absolute;
-  width: 100%;
-  height: 160%;
-  background-image: url("../images/Dimond_Pattern.png");
-  background-repeat: repeat-x repeat-y;
-  background-size: cover;
-  content: " ";
+.wrapper p {
+  width: 50%;
+  padding: 1.5em;
+}
+
+img#butter {
+  width: 10%;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
 }
 
 .two {
-  position: relative;
-  height: 100vh;
-  z-index: 1;
+  margin: 0;
+  padding: 20px;
+}
+
+img#butter2 {
+  width: 10%;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.wrapperGallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.two img {
+.wrapperGallery .burgerCover {
   width: 25%;
-  position: absolute;
-  right: 160px;
+  height: auto;
+  padding: 1.5em;
 }
 
-.two p {
-  width: 40%;
-  padding: 20px;
-  position: absolute;
-  left: 240px;
-  text-align: right;
+.wrapperGallery p {
+  width: 50%;
+  padding: 1.5em;
 }
 
-.two .bg {
-  position: absolute;
-  top: -45px;
-  left: 10px;
-  width: 100%;
-  height: 160%;
-  background-image: url("../images/Dimond_Pattern.png");
-  background-repeat: repeat-x repeat-y;
-  background-size: cover;
-  content: " ";
-  z-index: -1;
+.wrapperGallery .btnResume {
+  display: inline;
 }
 
-.two .btnResume {
-  background-color: #0067d5;
-  color: white;
-  position: absolute;
-  top: 500px;
-  width: 130px;
-  height: 30px;
-}
-
-.two h2 {
-  color: orange;
-  position: absolute;
-  left: 270px;
-  bottom: 450px;
-  text-align: right;
+@media screen and (max-width: 600px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .wrapper img#bao {
+    width: 80%;
+    height: auto;
+    padding: 2em;
+  }
+  .wrapper p {
+    width: 100%;
+    padding: 1em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
