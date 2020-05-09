@@ -8,7 +8,7 @@ html,
 }
 
 main {
-    background-image: url(../images/Dimond_Pattern.png);
+    background-image: url('../images/Dimond_Pattern.png');
     background-repeat: repeat;
     background-size: contain;
 
@@ -57,7 +57,7 @@ main {
         color: #02B0F0;
         text-align: center;
     }
-   
+
 }
 
 // ------------------------------Home Containers------------------------------------------
@@ -82,21 +82,17 @@ img#desg {
 // ------------------------------About Containers------------------------------------------
 .wrapper {
     display: flex;
-
+.me{
+    max-width: 100%;
+}
     img#bao {
         width: 50%;
         height: auto;
         padding: 1.5em;
     }
 
-    // h2{
-    //     //width: 50%;
-    //     //padding: 1em;
-    //     //text-align: right;
-    // }
-
     p {
-         width: 50%;
+        width: 50%;
         // margin: 0;
         padding: 1.5em;
         // display: flex;
@@ -104,10 +100,12 @@ img#desg {
     }
 }
 
-img#butter {
+
+img #butter {
     width: 10%;
     transform: rotate(-20deg);
 }
+
 
 
 .two {
@@ -120,21 +118,26 @@ img#butter {
 
 
 
-img#butter2{
-        width: 10%;
-    transform: rotate(20deg);
-    }
-.wrapperGallery{
+
+.wrapperGallery {
     display: flex;
+    // flex-direction: column-reverse;
+
+    img#butter2 {
+        width: 10%;
+        transform: rotate(20deg);
+    }
 
 
-    .burgerCover{
+
+    .burgerCover {
         width: 25%;
         height: auto;
+        margin-right: 20px;
         padding: 1.5em;
     }
 
-    p{
+    p {
         width: 50%;
         // margin: 0;
         padding: 1.5em;
@@ -142,9 +145,8 @@ img#butter2{
         // text-align: right;  
     }
 
-    .btnResume{
-        display: inline;
-    }
+
+
 }
 
 
@@ -155,88 +157,48 @@ img#butter2{
 
 @media screen and (max-width: 600px) {
     .wrapper {
-        //display: flex;
-        //width: 80%;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
 
-        img#bao {
+        img #bao {
             width: 80%;
             height: auto;
             padding: 2em;
         }
-        
-        // h2{
-        //     width: 100%;
-        //     //padding: 1em;
-        //     text-align: right;
-        // }
 
         p {
-            width:100%;
-            //font-size: 1em;
+            width: 100%;
             padding: 1em;
+            //font-size: 1.25em;
             //text-align: left;
-           
         }
     }
 }
 
-// @media screen and (max-width: 900px) {
-//     .wrapper {
-//         //display: flex;
-//         //width: 80%;
-//         display: flex;
-//         flex-direction: column-reverse;
-
-//         img#bao {
-//             width: 80%;
-//             height: auto;
-//             padding: 2em;
-//         }
+@media (min-width: 900px) {
+    .wrapper {
+        display: flex;
+        flex-direction: row-reverse;
         
-//         // h2{
-//         //     width: 100%;
-//         //     //padding: 1em;
-//         //     text-align: right;
-//         // }
 
-//         p {
-//             width:100%;
-//             //font-size: 1em;
-//             padding: 1em;
-//             //text-align: left;
-           
-//         }
-//     }
-// }
-
-
-// @media screen and (max-width: 1200px) {
-//     .wrapper {
-//         //display: flex;
-//         width: 80%;
-//         display: flex;
-//         flex-direction: column-reverse;
-
-//         img#bao {
-//             width: 80%;
-//             height: auto;
-//             padding: 1.5em;
-//         }
         
-//         h2{
-//             width: 100%;
-//             //padding: 1em;
-//             text-align: right;
-//         }
 
-//         p {
-//             width:100%;
-//             //font-size: 1em;
-//             padding: 1em;
-//             //text-align: left;
-           
-//         }
-//     }
-// }
+        .me {
+            width: 100%;
+        }
+        #bao {
+            max-width: 50%;
+            height: auto;
+            padding: 2em;
+        }
+        
+.text 
+        p {
+            width: 100%;
+            padding: 1em;
+            //font-size: 1.25em;
+            //text-align: left;
+        }
+    }
+
+}
